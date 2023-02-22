@@ -3,25 +3,14 @@ import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+ /*  Route,
+  Link, */
   Outlet,
-  createRoutesFromElements,
+  /* createRoutesFromElements, */
 } from "react-router-dom";
-import Products from "./routes/Products";
-
-import Navbar from "./Components/Navbar";
-import "./App.css";
-import Dashboard from "./routes/Dashboard";
-import Pricing from "./routes/Pricing";
-import Orderlists from "./routes/Orderlists";
-import Team from "./routes/Team";
-import Todo from "./routes/Todo";
-
-const AppLayout = () => (
+const App = () => (
   <>
-    <Navbar />
-    <Outlet />
+    
   </>
 );
 
@@ -52,16 +41,16 @@ const router = createBrowserRouter([
         element: <Pricing />,
       },
       {
-        path: "team",
-        element: <Team />,
-      },
-      {
-        path: "orderlists",
-        element: <Orderlists />,
+        path: "orderlist",
+        element: <Orderlist />,
       },
       {
         path: "todo",
         element: <Todo />,
+      },
+      {
+        path: "team",
+        element: <Team />,
       },
     ],
   },
