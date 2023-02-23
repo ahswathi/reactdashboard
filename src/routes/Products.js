@@ -3,7 +3,7 @@ import React from "react";
 function Products() {
   return (
     <div className= "container">
-  <div className="carousel-fluid px-5" id="products">
+  <div className="carousel-fluid ps-3" id="products">
     <div className="row g-3 my-2"> 
   <h3 className="text-white text-md-start mb-4">
   Products
