@@ -8,7 +8,8 @@ function Products() {
   <h3 className="text-white text-md-start mb-4">
   Products
   </h3>
-    <div className="  mb-3">
+    <div className="row  mb-3">
+
     <div className="col-md-4   mx-2   carousel-fluid-rectangle  text-white  rounded-4 mb-3 ">
       <section >
         <div className=" text-center">

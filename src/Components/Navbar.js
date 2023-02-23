@@ -7,14 +7,14 @@ import "../index.css";
 import { IconContext } from "react-icons";
 
 function Navbar() {
-  const [show, setShow] = useState(false);
+  const [shows, setShow] = useState(false);
 
   return (
     <>
-    <main className={show ? 'space-toggle' : null}>
-      <header className={`header ${show ? 'space-toggle' : null}`}>
-        <div className='header-toggle' onClick={() => setShow(!show)}>
-          <i className={`fas fa-bars ${show ? 'fas fa-bars' : null}`}></i>
+    <main className={shows ? 'space-toggle' : null}>
+      <header className={`header ${shows ? 'space-toggle' : null}`}>
+        <div className='header-toggle' onClick={() => setShow(!shows)}>
+          <i className={`fas fa-bars ${shows ? 'fas fa-bars' : null}`}></i>
         </div>
         <div class="d-flex text-white-50 justify-content-center border rounded-pill  mt-3 mb-1" style={{width:"200px", height:"42px" }}>
                 <i class="fas fa-search mt-2">
@@ -23,7 +23,7 @@ function Navbar() {
         </div>
       </header>
 
-      <aside className={`sidebar ${show ? 'show' : null}`}>
+      <aside className={`sidebar ${shows ? 'shows' : null}`}>
         <div className='navnav'>
           <div>
           <div class=" text-uppercase text-white fs-4 text-center mb-4">LOGO</div>

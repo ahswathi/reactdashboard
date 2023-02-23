@@ -3,7 +3,10 @@ import React from "react";
 function Todo() {
   return (
   <div className= "container">
-<div className="row g-3 my-2">
+<div className="row g-3 my-2 ms-4">
+<h3 className="text-white text-md-start mb-4">
+        To-Do
+       </h3>
     <div className="checkbox-container  form-subs-item  mb-3 card_todo d-flex justify-content-between rounded-3">
       <div><input type="checkbox" className="checking ms-3 me-5 "/>
       <label  className="text-white"> Meeting with CEO </label>

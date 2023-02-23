@@ -3,6 +3,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import PieChart from "../Components/Piechart";
 import PieChart2 from "../Components/Piechart2";
+import PieChart3 from "../Components/Piechart3";
 
 function Dashboard() {
   return (
@@ -19,8 +20,9 @@ function Dashboard() {
                    role="tab" aria-controls="pills-profile" aria-selected="false">Dashboard 2</button>
                 </li>
             </ul>
-          <div className="tab-content" id="pills-tabContent">
-      <div className="tab-pane fade show active px-3" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            
+        <div className="tab-content" id="pills-tabContent">
+      <div className="tab-pane fade show active px-3 w-100" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div className="row g-3 my-2" >
                   <div className="col-sm-4 col-md-6">
                     <div className="user-fluid cont-col text-white p-3 shadow-sm d-flex justify-content-around align-items-center rounded">
@@ -79,7 +81,7 @@ function Dashboard() {
                   </div>
                   </div>         
 
-              <div className="container-cols Salescol rounded-3 my-4 myChart px-4 py-3 mb-3 " style={{width:""}}>
+              <div className="container-cols Salescol rounded-3 my-4 myChart px-4 py-3 mb-3 " >
                 <h3 className="text-white py-3">Sales Details</h3>
                 <div className="row pb-3">
                <PieChart2/>
@@ -161,11 +163,11 @@ function Dashboard() {
             
              
 
-      <div className="tab-pane fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div className="tab-pane fade w-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div className="container-cols Salescol rounded-3 my-4 myChart px-4 py-3">
                   <h3 className="text-white py-3">Sales Details</h3>
                   <div className="row pb-3" style={{width:"100%"}}>
-                     <PieChart2/>
+                     <PieChart3/>
                   </div>
                   </div>
 

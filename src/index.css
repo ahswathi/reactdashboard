@@ -5,9 +5,8 @@
     --first-color: #273142;
     --white-color: #ffffff;
   }
-  #root{
+  body{
     background-color: #1d232c;
-    max-height:100%
   }
   * {
     margin: 0;
@@ -130,7 +129,7 @@
     transition: 0.5s;
   }
    */
-  .show {
+  .shows {
     left: 0;
   }
   
@@ -247,6 +246,15 @@ textarea:focus{
  .color-blue {
      background-color:blue;
  }
+
+ .Pricing li{
+  list-style-type: none;
+  text-align: center;
+}
+.carousel-fluid-rectangle {
+  width: 342px;
+}
+
   @media screen and (min-width: 768px) {
     main {
       margin: calc(var(--header-height) + 1rem) 0 0 0;
@@ -263,7 +271,7 @@ textarea:focus{
       padding: 1rem 0 0 0;
     }
   
-    .show {
+    .shows {
       width: 0;
     }
   
